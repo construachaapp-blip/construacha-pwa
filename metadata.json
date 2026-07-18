@@ -1,0 +1,9 @@
+{
+  "name": "ConstruAcha",
+  "description": "Aplicación de servicios de construcción, remodelación y asesoría técnica con asistente IA integrado.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

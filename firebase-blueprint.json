@@ -1,0 +1,129 @@
+{
+  "entities": {
+    "user": {
+      "title": "Usuario",
+      "description": "Perfil de usuario con roles y preferencias.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "client"] },
+        "status": { "type": "string", "enum": ["active", "blocked"] },
+        "name": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "email", "role", "status"]
+    },
+    "comment": {
+      "title": "Comentario de Cliente",
+      "description": "Comentario dejado por un cliente para revisión administrativa.",
+      "type": "object",
+      "properties": {
+        "commentId": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userPhoto": { "type": "string" },
+        "content": { "type": "string" },
+        "approved": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["commentId", "userId", "content", "approved", "createdAt"]
+    },
+    "setting": {
+      "title": "Ajustes de la Aplicación",
+      "description": "Configuración de visibilidad de los botones del cliente en la aplicación.",
+      "type": "object",
+      "properties": {
+        "allowBudgetRequest": { "type": "boolean" },
+        "allowServicesList": { "type": "boolean" },
+        "allowPortfolio": { "type": "boolean" },
+        "allowAIChat": { "type": "boolean" },
+        "allowMyOrders": { "type": "boolean" },
+        "allowComments": { "type": "boolean" },
+        "allowNotifications": { "type": "boolean" }
+      },
+      "required": ["allowBudgetRequest", "allowServicesList", "allowPortfolio", "allowAIChat", "allowMyOrders", "allowComments", "allowNotifications"]
+    },
+    "budget": {
+      "title": "Presupuesto",
+      "description": "Expediente de presupuesto de obra solicitado por un cliente.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "orderId": { "type": "integer" },
+        "cliente": { "type": "string" },
+        "idDocumento": { "type": "string" },
+        "tipo": { "type": "string" },
+        "servicios": { "type": "array", "items": { "type": "string" } },
+        "descripcion": { "type": "string" },
+        "telefono": { "type": "string" },
+        "email": { "type": "string" },
+        "location": { "type": "object" },
+        "fecha": { "type": "string" },
+        "hora": { "type": "string" },
+        "fotos": { "type": "integer" },
+        "previews": { "type": "array" },
+        "confirmed": { "type": "boolean" },
+        "interactions": { "type": "array" },
+        "uid": { "type": "string" }
+      },
+      "required": ["id", "orderId", "cliente", "confirmed", "uid"]
+    },
+    "reminder": {
+      "title": "Recordatorio",
+      "description": "Alarma o recordatorio de seguimiento creado por administración.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "budgetId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "date": { "type": "string" },
+        "time": { "type": "string" },
+        "note": { "type": "string" },
+        "dismissed": { "type": "boolean" }
+      },
+      "required": ["id", "budgetId", "date", "time", "dismissed"]
+    },
+    "portfolio_item": {
+      "title": "Obra de Galería",
+      "description": "Proyecto, obra terminada o comparación antes/después del portafolio.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "urlBefore": { "type": "string" },
+        "type": { "type": "string", "enum": ["image", "video"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "title", "url", "type"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "user",
+      "description": "Almacena los perfiles de usuario."
+    },
+    "comments/{commentId}": {
+      "schema": "comment",
+      "description": "Almacena los comentarios de los clientes."
+    },
+    "app_settings/{documentId}": {
+      "schema": "setting",
+      "description": "Almacena la configuración dinámica que activa o deactiva los botones y accesos del cliente."
+    },
+    "budgets/{budgetId}": {
+      "schema": "budget",
+      "description": "Almacena los expedientes y solicitudes de presupuesto en la nube de forma permanente."
+    },
+    "reminders/{reminderId}": {
+      "schema": "reminder",
+      "description": "Almacena recordatorios de seguimiento y alarmas de mantenimiento en tiempo real."
+    },
+    "portfolio/{itemId}": {
+      "schema": "portfolio_item",
+      "description": "Almacena los proyectos de la galería con comparativa antes/después para exhibición."
+    }
+  }
+}

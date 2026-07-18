@@ -1,0 +1,65 @@
+{
+  "id": "/?standalone=true",
+  "scope": "/",
+  "short_name": "ConstruAcha",
+  "name": "ConstruAcha Bitácora y Control",
+  "description": "Bitácora y Control de Obras ConstruAcha",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo_acha.png",
+      "sizes": "335x314",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo_acha.png",
+      "sizes": "335x314",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "ConstruAcha Dashboard"
+    },
+    {
+      "src": "/logo_acha.png",
+      "sizes": "335x314",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "ConstruAcha Panel de Bitácora"
+    }
+  ],
+  "start_url": "/?standalone=true",
+  "background_color": "#000000",
+  "theme_color": "#FFCD00",
+  "display": "standalone",
+  "orientation": "portrait"
+}
