@@ -1,12 +1,13 @@
-const CACHE_NAME = 'construacha-v16';
+const CACHE_NAME = 'construacha-v17';
 const ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/logo_acha-v2.png',
-  '/icon-v2.png',
-  '/icon-192-v2.png',
-  '/icon-512-v2.png'
+  '/icon-192.svg',
+  '/icon-512.svg',
+  '/icon-maskable.svg',
+  '/screenshot-wide.svg',
+  '/screenshot-narrow.svg'
 ];
 
 self.addEventListener('install', (e) => {

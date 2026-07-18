@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Fondo Negro Sólido -->
+  <rect width="192" height="192" rx="40" fill="#0A0A0A"/>
+  
+  <!-- Círculo de acento sutil amarillo -->
+  <circle cx="96" cy="96" r="76" fill="none" stroke="#FFCD00" stroke-width="2" stroke-opacity="0.2"/>
+
+  <!-- Logotipo Estilizado de ConstruAcha (Hacha de Construcción de Vanguardia) -->
+  <g transform="translate(48, 44)">
+    <!-- Mango de madera/acero (Inclinado) -->
+    <path d="M 12 88 L 76 24 C 78 22, 82 22, 84 24 L 88 28 C 90 30, 90 34, 88 36 L 24 100 C 22 102, 18 102, 16 100 L 12 96 C 10 94, 10 90, 12 88 Z" fill="#666666"/>
+    
+    <!-- Hoja del Hacha (Agresiva, Técnica, Geométrica) en Amarillo ConstruAcha -->
+    <path d="M 60 20 L 88 12 C 92 11, 96 14, 95 18 L 90 48 C 89 52, 84 54, 80 50 L 56 28 C 53 25, 55 21, 60 20 Z" fill="#FFCD00"/>
+    
+    <!-- Filo brillante del hacha -->
+    <path d="M 88 12 L 95 18 L 90 48 C 89 52, 87 50, 85 45 L 83 25 C 82 20, 85 14, 88 12 Z" fill="#FFF" opacity="0.3"/>
+    
+    <!-- Líneas de acento industrial/construcción (Casco / Estructura) -->
+    <line x1="20" y1="92" x2="35" y2="77" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="30" y1="82" x2="45" y2="67" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
