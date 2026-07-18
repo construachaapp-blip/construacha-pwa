@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="720" height="1280">
+  <!-- Background -->
+  <rect width="720" height="1280" fill="#0A0A0A"/>
+  
+  <!-- Subtle Gradient Glow -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFCD00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="360" cy="640" r="500" fill="url(#glow)"/>
+
+  <!-- Mockup Mobile Frame -->
+  <rect x="60" y="80" width="600" height="1120" rx="40" fill="#141414" stroke="#222" stroke-width="4"/>
+  
+  <!-- Mobile Status Bar Mockup -->
+  <rect x="100" y="105" width="520" height="20" rx="10" fill="#0D0D0D"/>
+  <circle cx="120" cy="115" r="5" fill="#666"/>
+  <circle cx="135" cy="115" r="5" fill="#666"/>
+  <circle cx="150" cy="115" r="5" fill="#666"/>
+  <text x="560" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#666" text-anchor="end">10:45 AM</text>
+
+  <!-- Mobile Header -->
+  <text x="100" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="32" fill="#FFCD00">ConstruAcha</text>
+  <text x="100" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#888">Bitácora y Control de Obras</text>
+  
+  <!-- Action Buttons Mockup -->
+  <g transform="translate(100, 250)">
+    <!-- Main Big Button: Nueva Bitacora -->
+    <rect x="0" y="0" width="520" height="80" rx="16" fill="#FFCD00"/>
+    <text x="260" y="48" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="20" fill="#000" text-anchor="middle">NUEVA BITÁCORA DE OBRA</text>
+  </g>
+
+  <!-- Section Title -->
+  <text x="100" y="390" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="20" fill="#FFF">Accesos Rápidos</text>
+
+  <!-- Grid of Buttons -->
+  <g transform="translate(100, 420)">
+    <!-- Camara -->
+    <rect x="0" y="0" width="245" height="100" rx="16" fill="#1A1A1A" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="122" y="58" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="16" fill="#FFF" text-anchor="middle">📷 CÁMARA</text>
+    
+    <!-- GPS -->
+    <rect x="275" y="0" width="245" height="100" rx="16" fill="#1A1A1A" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="397" y="58" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="16" fill="#FFF" text-anchor="middle">📍 UBICACIÓN GPS</text>
+    
+    <!-- Audio -->
+    <rect x="0" y="130" width="245" height="100" rx="16" fill="#1A1A1A" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="122" y="188" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="16" fill="#FFF" text-anchor="middle">🎙️ GRABAR AUDIO</text>
+
+    <!-- Firmar -->
+    <rect x="275" y="130" width="245" height="100" rx="16" fill="#1A1A1A" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="397" y="188" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="16" fill="#FFCD00" text-anchor="middle">✍️ FIRMAR BITÁCORA</text>
+  </g>
+
+  <!-- Recent Log List Card -->
+  <text x="100" y="700" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="20" fill="#FFF">Bitácoras del Día</text>
+
+  <g transform="translate(100, 730)">
+    <!-- Log 1 -->
+    <rect x="0" y="0" width="520" height="120" rx="16" fill="#1A1A1A" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="25" y="45" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="16" fill="#FFCD00">Obra: Torre Norte - Piso 14</text>
+    <text x="25" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#FFF">Vaciado de losa y control de fraguado</text>
+    <text x="25" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#666">Responsable: Ing. Arrieta • Hace 15 min</text>
+    
+    <!-- Log 2 -->
+    <rect x="0" y="150" width="520" height="120" rx="16" fill="#1A1A1A" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="25" y="195" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="16" fill="#FFF">Obra: Condominio San José</text>
+    <text x="25" y="225" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#BBB">Excavación de zanjas para cimientos</text>
+    <text x="25" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#666">Responsable: Maestro Gómez • Hace 2 horas</text>
+  </g>
+
+  <!-- Bottom Navigation Mockup -->
+  <rect x="60" y="1100" width="600" height="100" rx="0" fill="#0D0D0D" stroke="#222" stroke-width="2"/>
+  <text x="160" y="1155" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="14" fill="#FFCD00" text-anchor="middle">🏠 INICIO</text>
+  <text x="360" y="1155" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#666" text-anchor="middle">📂 HISTORIAL</text>
+  <text x="560" y="1155" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#666" text-anchor="middle">⚙️ AJUSTES</text>
+</svg>
